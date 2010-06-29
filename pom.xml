@@ -2,7 +2,7 @@
   <properties>
 		<module.group>de.linnk.fatclient.swingguis</module.group>    <!--  Maven groupId -->
 		<module.name>lnFatClientSwingGUIs</module.name>             <!--  Maven artifactId -->
-		<module.version>0.0.1-SNAPSHOT</module.version> <!--  Maven artifact version -->
+		<module.version>0.0.1</module.version> <!--  Maven artifact version -->
 		<module.importedPackages>com.sun.java.swing.plaf.windows;resolution:=optional,
 		*
 		</module.importedPackages>
@@ -189,4 +189,18 @@
 
 
 	</build>
+	
+	<!-- DISTRIBUTION MANAGEMENT -->
+	<distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Internal Releases</name>
+            <url>http://STF-6121-DSK06.com.auckland.ac.nz:8080/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Internal Snapshots</name>
+            <url>http://STF-6121-DSK06.com.auckland.ac.nz:8080/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>

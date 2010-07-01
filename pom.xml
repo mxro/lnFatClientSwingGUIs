@@ -11,7 +11,7 @@
 		<!--
 			exported packages from embedded dependencies
 		-->
-		<module.exportedPackages>
+		<module.exportedPackages>de.linnk.netbeansguis
 		</module.exportedPackages>
 		<module.embeddedDependencies>swing-layout;inline=true
 		</module.embeddedDependencies>

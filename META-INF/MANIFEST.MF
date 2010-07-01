@@ -1,7 +1,8 @@
 Manifest-Version: 1.0
-Export-Package: org.jdesktop.layout;uses:="javax.swing.border,javax.sw
- ing,javax.swing.text,javax.swing.plaf,com.sun.java.swing.plaf.windows
- ,javax.swing.plaf.metal"
+Export-Package: de.linnk.netbeansguis;uses:="javax.swing,org.jdesktop.
+ layout,javax.swing.event",org.jdesktop.layout;uses:="javax.swing.bord
+ er,javax.swing,javax.swing.text,javax.swing.plaf,com.sun.java.swing.p
+ laf.windows,javax.swing.plaf.metal"
 Embed-Directory: target/dependency
 Built-By: mx
 Tool: Bnd-0.0.357
@@ -9,9 +10,10 @@ Bundle-Name: lnFatClientSwingGUIs
 Created-By: Apache Maven Bundle Plugin
 Build-Jdk: 1.6.0_20
 Bundle-Version: 0.0.1
-Bnd-LastModified: 1277945614431
+Bnd-LastModified: 1277946606708
 Bundle-ManifestVersion: 2
 Import-Package: com.sun.java.swing.plaf.windows;resolution:=optional,
+ de.linnk.netbeansguis,
  javax.swing,
  javax.swing.border,
  javax.swing.event,

@@ -11,9 +11,14 @@ Build-Jdk: 1.6.0_20
 Bundle-Version: 0.0.1
 Bnd-LastModified: 1277945614431
 Bundle-ManifestVersion: 2
-Import-Package: com.sun.java.swing.plaf.windows;resolution:=optional,j
- avax.swing,javax.swing.border,javax.swing.event,javax.swing.plaf,java
- x.swing.plaf.metal,javax.swing.text,org.jdesktop.layout
+Import-Package: com.sun.java.swing.plaf.windows;resolution:=optional,
+ javax.swing,
+ javax.swing.border,
+ javax.swing.event,
+ javax.swing.plaf,
+ javax.swing.plaf.metal,
+ javax.swing.text,
+ org.jdesktop.layout
 Embed-Dependency: swing-layout;inline=true
 Bundle-SymbolicName: lnFatClientSwingGUIs
 

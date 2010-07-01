@@ -6,14 +6,14 @@
 		<module.importedPackages>com.sun.java.swing.plaf.windows;resolution:=optional,
 		*
 		</module.importedPackages>
-		<module.exportedContents>
+		<module.exportedContents>org.jdesktop.layout
 		</module.exportedContents>
 		<!--
 			exported packages from embedded dependencies
 		-->
 		<module.exportedPackages>
 		</module.exportedPackages>
-		<module.embeddedDependencies>swing-layout;inline=false
+		<module.embeddedDependencies>swing-layout;inline=true
 		</module.embeddedDependencies>
 		<module.serviceDefinitions>
 		</module.serviceDefinitions>

@@ -4,23 +4,18 @@ Export-Package: de.linnk.netbeansguis;uses:="javax.swing,org.jdesktop.
  er,javax.swing,javax.swing.text,javax.swing.plaf,com.sun.java.swing.p
  laf.windows,javax.swing.plaf.metal"
 Embed-Directory: target/dependency
-Built-By: mx
+Built-By: Max
 Tool: Bnd-0.0.357
 Bundle-Name: lnFatClientSwingGUIs
 Created-By: Apache Maven Bundle Plugin
-Build-Jdk: 1.6.0_20
+Build-Jdk: 1.6.0_22
 Bundle-Version: 0.0.1
-Bnd-LastModified: 1277946606708
+Bnd-LastModified: 1287778533362
 Bundle-ManifestVersion: 2
-Import-Package: com.sun.java.swing.plaf.windows;resolution:=optional,
- de.linnk.netbeansguis,
- javax.swing,
- javax.swing.border,
- javax.swing.event,
- javax.swing.plaf,
- javax.swing.plaf.metal,
- javax.swing.text,
- org.jdesktop.layout
-Embed-Dependency: swing-layout;inline=true
+Import-Package: com.sun.java.swing.plaf.windows;resolution:=optional,d
+ e.linnk.netbeansguis,javax.swing,javax.swing.border,javax.swing.event
+ ,javax.swing.plaf,javax.swing.plaf.metal,javax.swing.text,org.jdeskto
+ p.layout
 Bundle-SymbolicName: lnFatClientSwingGUIs
+Embed-Dependency: swing-layout;inline=true
 

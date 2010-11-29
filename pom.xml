@@ -13,7 +13,7 @@
 		-->
 		<module.exportedPackages>de.linnk.netbeansguis
 		</module.exportedPackages>
-		<module.embeddedDependencies>swing-layout;inline=true
+		<module.embeddedDependencies>swing-layout
 		</module.embeddedDependencies>
 		<module.serviceDefinitions>
 		</module.serviceDefinitions>
@@ -52,11 +52,12 @@
 			<plugin>
 				<groupId>org.apache.felix</groupId>
 				<artifactId>maven-bundle-plugin</artifactId>
+				<version>2.1.0</version>
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-						<Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
-						<Bundle-Version>${pom.version}</Bundle-Version>
+						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+						<Bundle-Version>${project.version}</Bundle-Version>
 						<Import-Package>${module.importedPackages}</Import-Package>
 						<Export-Package>${module.exportedPackages}</Export-Package>
 						<Service-Component>${module.serviceDefinitions}
@@ -64,6 +65,7 @@
 						<Embed-Dependency>${module.embeddedDependencies}
 						</Embed-Dependency>
 						<Embed-Directory>target/dependency</Embed-Directory>
+						<Embed-Transitive>${module.embedTransitive}</Embed-Transitive>
 						<_exportcontents>${module.exportedContents}</_exportcontents>
 					</instructions>
 				</configuration>
@@ -88,6 +90,22 @@
 						</goals>
 						<configuration>
 							<outputDirectory>${basedir}</outputDirectory>
+							<overWriteReleases>false</overWriteReleases>
+							<overWriteSnapshots>false</overWriteSnapshots>
+							<overWriteIfNewer>true</overWriteIfNewer>
+						</configuration>
+					</execution>
+					
+					<!-- for eclipse pde -->
+					 <execution>
+						<id>copy-dependencies2</id>
+						<phase>process-sources</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<!-- <includeArtifactIds>${module.embeddedDependencies}</includeArtifactIds>-->
+							<outputDirectory>${basedir}/target/dependency</outputDirectory>
 							<overWriteReleases>false</overWriteReleases>
 							<overWriteSnapshots>false</overWriteSnapshots>
 							<overWriteIfNewer>true</overWriteIfNewer>

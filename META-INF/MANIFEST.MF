@@ -11,7 +11,7 @@ Bundle-Name: lnFatClientSwingGUIs
 Created-By: Apache Maven Bundle Plugin
 Build-Jdk: 1.7.0_79
 Bundle-Version: 0.0.1
-Bnd-LastModified: 1437982753434
+Bnd-LastModified: 1437982834593
 Bundle-ManifestVersion: 2
 Embed-Dependency: swing-layout
 Import-Package: com.sun.java.swing.plaf.windows;resolution:=optional,d
